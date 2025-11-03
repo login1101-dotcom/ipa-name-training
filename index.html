@@ -157,3 +157,10 @@
   </script>
 </body>
 </html>
+<script>
+fetch("https://counter-app.english-phonics.workers.dev/?app=ipa-name-training")
+  .then(res => res.json())
+  .then(data => {
+    console.log("今日のアクセス数:", data.count);
+  });
+</script>
